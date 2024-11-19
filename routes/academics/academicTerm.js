@@ -17,7 +17,7 @@ const academicTermRouter = express.Router();
 academicTermRouter
 .route("/")
 .post(isLogin, isAdmin, createAcademicTerm)
-.get( isLogin, isAdmin, getAcademicTerms);
+.get(getAcademicTerms);
 
 academicTermRouter
 .route("/:id")
